@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medstation Corporate Structure</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes slideIn {
+      from { transform: translateX(100%); opacity: 0; }
+      to { transform: translateX(0); opacity: 1; }
+    }
+    .animate-slide-in { animation: slideIn 0.3s ease-out; }
+  </style>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 p-8 font-sans">
+  <!-- Background Pattern -->
+  <div class="fixed inset-0 opacity-5 pointer-events-none">
+    <div class="absolute inset-0" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 40px 40px;"></div>
+  </div>
+
+  <div class="relative max-w-7xl mx-auto">
+    <!-- Header -->
+    <div class="text-center mb-12">
+      <h1 class="text-4xl font-bold text-white mb-2 tracking-tight">Medstation Corporate Structure</h1>
+      <p class="text-slate-400 text-lg">Florida LLC Organizational Chart</p>
+      <p class="text-slate-500 text-sm mt-2">Click any entity for details • Data from Florida Sunbiz</p>
+    </div>
+
+    <!-- Org Chart -->
+    <div class="flex flex-col items-center">
+      
+      <!-- Level 1: Principal -->
+      <div class="entity-box person" data-id="neymar">
+        <div class="text-xs uppercase tracking-wider opacity-70 mb-1">👤 Principal</div>
+        <div class="font-semibold leading-tight">Dr. Neymar Cabral De Lima</div>
+      </div>
+      <div class="w-0.5 bg-gradient-to-b from-slate-400 to-slate-600" style="height: 50px;"></div>
+      
+      <!-- Level 2: Horizontal Line -->
+      <div class="flex items-start justify-center gap-4 relative">
+        <div class="h-0.5 bg-gradient-to-r from-slate-400 via-slate-500 to-slate-400" style="width: 700px;"></div>
+      </div>
+      
+      <!-- Level 2: Holding Companies -->
+      <div class="flex justify-center gap-6 mt-0">
+        <div class="flex flex-col items-center">
+          <div class="w-0.5 bg-gradient-to-b from-slate-400 to-slate-600" style="height: 30px;"></div>
+          <div class="entity-box holding" data-id="ambr-brazilian">
+            <div class="text-xs uppercase tracking-wider opacity-70 mb-1">🏛️ Holding Co.</div>
+            <div class="font-semibold leading-tight">AMBR Brazilian Clinic LLC</div>
+          </div>
+        </div>
+        <div class="flex flex-col items-center">
+          <div class="w-0.5 bg-gradient-to-b from-slate-400 to-slate-600" style="height: 30px;"></div>
+          <div class="entity-box holding" data-id="ambr-solution">
+            <div class="text-xs uppercase tracking-wider opacity-70 mb-1">🏛️ Holding Co.</div>
+            <div class="font-semibold leading-tight">AMBR Solution Health LLC</div>
+          </div>
+        </div>
+        <div class="flex flex-col items-center">
+          <div class="w-0.5 bg-gradient-to-b from-slate-400 to-slate-600" style="height: 30px;"></div>
+          <div class="entity-box holding" data-id="sc-health">
+            <div class="text-xs uppercase tracking-wider opacity-70 mb-1">🏛️ Holding Co.</div>
+            <div class="font-semibold leading-tight">AMBR SC Health Academy LLC</div>
+          </div>
+        </div>
+        <div class="flex flex-col items-center">
+          <div class="w-0.5 bg-gradient-to-b from-slate-400 to-slate-600" style="height: 30px;"></div>
+          <div class="entity-box holding" data-id="lrv">
+            <div class="text-xs uppercase tracking-wider opacity-70 mb-1">🏛️ Holding Co.</div>
+            <div class="font-semibold leading-tight">LRV Solutions Corp</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Connection Lines to Operating Entities -->
+      <div class="flex justify-center gap-6 mt-4">
+        <div class="flex flex-col items-center" style="width: 200px;">
+          <div class="w-0.5 bg-gradient-to-b from-slate-400 to-slate-600" style="height: 30px;"></div>
+          <div class="h-0.5 w-48 bg-slate-500"></div>
+        </div>
+        <div class="flex flex-col items-center" style="width: 200px;">
+          <div class="w-0.5 bg-gradient-to-b from-slate-400 to-slate-600" style="height: 30px;"></div>
+          <div class="h-0.5 w-32 bg-slate-500"></div>
+        </div>
+        <div class="flex flex-col items-center" style="width: 200px;">
+          <div class="w-0.5 bg-gradient-to-b from-slate-400 to-slate-600" style="height: 30px;"></div>
+        </div>
+        <div class="flex flex-col items-center" style="width: 200px;">
+          <div class="w-0.5 bg-gradient-to-b from-slate-400 to-slate-600" style="height: 30px;"></div>
+        </div>
+      </div>
+
+      <!-- Level 3: Operating LLCs -->
+      <div class="grid grid-cols-4 gap-6 mt-6">
+        <!-- Under AMBR Brazilian Clinic -->
+        <div class="flex flex-col items-center gap-4">
+          <div class="entity-box operating" data-id="sunny-isles">
+            <div class="text-xs uppercase tracking-wider opacity-70 mb-1">🏥 Operating LLC</div>
+            <div class="font-semibold leading-tight">Medstation Sunny Isles LLC</div>
+          </div>
+          <div class="entity-box operating" data-id="miami-primary">
+            <div class="text-xs uppercase tracking-wider opacity-70 mb-1">🏥 Operating LLC</div>
+            <div class="font-semibold leading-tight">Medstation Miami Primary Care LLC</div>
+          </div>
+          <div class="entity-box operating ring-2 ring-slate-400 ring-opacity-50" data-id="dr-phillips">
+            <div class="text-xs uppercase tracking-wider opacity-70 mb-1">🏥 Operating LLC</div>
+            <div class="font-semibold leading-tight">Medstation Dr Phillips LLC</div>
+          </div>
+        </div>
+        
+        <!-- Under AMBR Solution Health -->
+        <div class="flex flex-col items-center gap-4">
+          <div class="entity-box operating" data-id="card">
+            <div class="text-xs uppercase tracking-wider opacity-70 mb-1">🏥 Operating LLC</div>
+            <div class="font-semibold leading-tight">Medstation Card LLC</div>
+          </div>
+          <div class="entity-box operating" data-id="premium">
+            <div class="text-xs uppercase tracking-wider opacity-70 mb-1">🏥 Operating LLC</div>
+            <div class="font-semibold leading-tight">Medstation Premium LLC</div>
+          </div>
+        </div>
+
+        <!-- Under SC Health Academy -->
+        <div class="flex flex-col items-center gap-4">
+          <div class="text-slate-500 text-xs text-center italic px-4">
+            Co-owns Dr Phillips LLC<br/>(shown left)
+          </div>
+        </div>
+
+        <!-- Under LRV Solutions -->
+        <div class="flex flex-col items-center gap-4">
+          <div class="entity-box operating" data-id="boca-usa">
+            <div class="text-xs uppercase tracking-wider opacity-70 mb-1">🏥 Operating LLC</div>
+            <div class="font-semibold leading-tight">Medstation Boca USA LLC</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Standalone Entities -->
+      <div class="mt-10 pt-8 border-t border-slate-700 w-full">
+        <div class="text-center text-slate-400 text-sm mb-4 uppercase tracking-wider">
+          Additional Entities (Directly Managed)
+        </div>
+        <div class="flex justify-center gap-6">
+          <div class="entity-box operating" data-id="primary-clinic">
+            <div class="text-xs uppercase tracking-wider opacity-70 mb-1">🏥 Operating LLC</div>
+            <div class="font-semibold leading-tight">Medstation Primary Clinic LLC</div>
+          </div>
+          <div class="entity-box operating" data-id="tech">
+            <div class="text-xs uppercase tracking-wider opacity-70 mb-1">🏥 Operating LLC</div>
+            <div class="font-semibold leading-tight">Medstation Tech LLC</div>
+          </div>
+        </div>
+        <div class="text-center text-slate-500 text-xs mt-3">
+          Managed by Vitor Lima (CEO/MGR)
+        </div>
+      </div>
+    </div>
+
+    <!-- Detail Panel -->
+    <div id="detail-panel" class="hidden fixed bottom-8 right-8 w-96 bg-slate-800/95 backdrop-blur-sm rounded-xl border border-slate-600 shadow-2xl p-6 animate-slide-in">
+      <button id="close-panel" class="absolute top-3 right-3 text-slate-400 hover:text-white transition-colors text-xl">✕</button>
+      <h3 id="detail-name" class="text-xl font-bold text-white mb-4"></h3>
+      <div id="detail-content" class="space-y-3 text-sm"></div>
+    </div>
+
+    <!-- Legend -->
+    <div class="mt-12 flex justify-center gap-8">
+      <div class="flex items-center gap-2">
+        <div class="w-4 h-4 rounded bg-gradient-to-br from-amber-500 to-amber-600"></div>
+        <span class="text-slate-400 text-sm">Principal/Individual</span>
+      </div>
+      <div class="flex items-center gap-2">
+        <div class="w-4 h-4 rounded bg-gradient-to-br from-slate-700 to-slate-800 border border-slate-500"></div>
+        <span class="text-slate-400 text-sm">Holding Company</span>
+      </div>
+      <div class="flex items-center gap-2">
+        <div class="w-4 h-4 rounded bg-gradient-to-br from-emerald-600 to-emerald-700"></div>
+        <span class="text-slate-400 text-sm">Operating LLC</span>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-8 text-center text-slate-500 text-xs">
+      Source: Florida Division of Corporations (Sunbiz) • Generated January 2026
+    </div>
+  </div>
+
+  <script>
+    const entityDetails = {
+      'neymar': {
+        name: 'Dr. Neymar Cabral De Lima',
+        role: 'Founder / Principal',
+        address: '3402 N Andrews Ave Ext, Pompano Beach, FL 33064',
+        notes: 'Ultimate beneficial owner and founder of the Medstation network'
+      },
+      'ambr-brazilian': {
+        name: 'AMBR Brazilian Clinic LLC',
+        docNumber: 'Holding Company',
+        address: '3402 N Andrews Extension, Pompano Beach, FL 33064',
+        notes: 'Primary holding company for clinical operations',
+        controls: ['Medstation Sunny Isles LLC', 'Medstation Miami Primary Care LLC', 'Medstation Dr Phillips LLC']
+      },
+      'ambr-solution': {
+        name: 'AMBR Solution Health LLC',
+        docNumber: 'Holding Company',
+        address: '1191 E Newport Center Dr #103, Deerfield Beach, FL 33442',
+        notes: 'Holding company for ancillary services',
+        controls: ['Medstation Card LLC', 'Medstation Premium LLC']
+      },
+      'sc-health': {
+        name: 'AMBR SC Health Academy LLC',
+        docNumber: 'Holding Company',
+        address: '8972 Turkey Lake Rd A-700, Orlando, FL 32819',
+        notes: 'Orlando-area holding company',
+        controls: ['Medstation Dr Phillips LLC (co-owner)']
+      },
+      'lrv': {
+        name: 'LRV Solutions Corp',
+        docNumber: 'Holding Company',
+        address: '3402 N Andrews Avenue Extension, Pompano Beach, FL 33064',
+        notes: 'Investment/holding entity',
+        controls: ['Medstation Boca USA LLC']
+      },
+      'sunny-isles': {
+        name: 'Medstation Sunny Isles LLC',
+        docNumber: 'L16000076549',
+        ein: '81-2338958',
+        filed: '04/18/2016',
+        status: 'ACTIVE',
+        address: '3095 NE 163 St, North Miami Beach, FL 33160',
+        owners: ['AMBR Brazilian Clinic LLC', 'Dr. Neymar Cabral De Lima (MGR)']
+      },
+      'miami-primary': {
+        name: 'Medstation Miami Primary Care LLC',
+        docNumber: 'L16000145942',
+        ein: '81-3493088',
+        filed: '08/04/2016',
+        status: 'ACTIVE',
+        address: '6701 Sunset Dr, Suite #112, South Miami, FL 33143',
+        owners: ['AMBR Brazilian Clinic LLC']
+      },
+      'card': {
+        name: 'Medstation Card LLC',
+        docNumber: 'L19000275045',
+        ein: '84-4006181',
+        filed: '11/04/2019',
+        status: 'ACTIVE',
+        address: '1362 Weston Rd, Weston, FL 33326',
+        owners: ['AMBR Solution Health LLC']
+      },
+      'primary-clinic': {
+        name: 'Medstation Primary Clinic LLC',
+        docNumber: 'L20000027993',
+        ein: '84-4536257',
+        filed: '01/29/2020',
+        status: 'ACTIVE',
+        address: '1362 Weston Road, Weston, FL 33326',
+        owners: ['Vitor Lima (CEO, MGR)']
+      },
+      'dr-phillips': {
+        name: 'Medstation Dr Phillips LLC',
+        docNumber: 'L20000106597',
+        ein: '85-0796315',
+        filed: '04/21/2020',
+        status: 'ACTIVE',
+        address: '8956 Turkey Lake Rd Ste B 950, Orlando, FL 32819',
+        owners: ['AMBR Brazilian Clinic LLC', 'AMBR SC Health Academy LLC']
+      },
+      'boca-usa': {
+        name: 'Medstation Boca USA LLC',
+        docNumber: 'L24000257903',
+        filed: '06/05/2024',
+        status: 'ACTIVE',
+        address: '3402 N Andrews Avenue Extension, Pompano Beach, FL 33064',
+        owners: ['LRV Solutions Corp']
+      },
+      'premium': {
+        name: 'Medstation Premium LLC',
+        docNumber: 'L25000169292',
+        ein: '33-4653305',
+        filed: '04/08/2025',
+        status: 'ACTIVE',
+        address: '3402 N Andrews Ave Extension, Pompano Beach, FL 33064',
+        owners: ['AMBR Solution Health LLC', 'Dr. Neymar C. De Lima']
+      },
+      'tech': {
+        name: 'Medstation Tech LLC',
+        docNumber: 'L25000491262',
+        filed: '2025',
+        status: 'ACTIVE',
+        address: 'Pompano Beach, FL',
+        owners: ['TBD - Recently formed entity']
+      }
+    };
+
+    let selectedEntity = null;
+    const detailPanel = document.getElementById('detail-panel');
+    const detailName = document.getElementById('detail-name');
+    const detailContent = document.getElementById('detail-content');
+    const closeBtn = document.getElementById('close-panel');
+
+    // Add styles for entity boxes
+    const style = document.createElement('style');
+    style.textContent = `
+      .entity-box {
+        padding: 12px 16px;
+        border-radius: 8px;
+        border-width: 2px;
+        cursor: pointer;
+        transition: all 0.3s ease-out;
+        color: white;
+        text-align: center;
+        font-weight: 500;
+        font-size: 14px;
+        min-width: 160px;
+        max-width: 200px;
+      }
+      .entity-box:hover {
+        transform: scale(1.05);
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+      }
+      .entity-box.selected {
+        ring: 4px;
+        box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.5);
+        transform: scale(1.05);
+      }
+      .entity-box.person {
+        background: linear-gradient(to bottom right, #f59e0b, #d97706);
+        border-color: #fbbf24;
+      }
+      .entity-box.holding {
+        background: linear-gradient(to bottom right, #334155, #1e293b);
+        border-color: #64748b;
+      }
+      .entity-box.operating {
+        background: linear-gradient(to bottom right, #059669, #047857);
+        border-color: #34d399;
+      }
+    `;
+    document.head.appendChild(style);
+
+    function showDetails(id) {
+      const entity = entityDetails[id];
+      if (!entity) return;
+
+      // Remove selected state from all boxes
+      document.querySelectorAll('.entity-box').forEach(box => box.classList.remove('selected'));
+      
+      if (selectedEntity === id) {
+        // Toggle off
+        selectedEntity = null;
+        detailPanel.classList.add('hidden');
+        return;
+      }
+
+      selectedEntity = id;
+      document.querySelector(`[data-id="${id}"]`).classList.add('selected');
+
+      detailName.textContent = entity.name;
+      
+      let content = '';
+      
+      if (entity.docNumber) {
+        content += `<div><span class="text-slate-400">Document #:</span><span class="text-slate-200 ml-2">${entity.docNumber}</span></div>`;
+      }
+      if (entity.ein) {
+        content += `<div><span class="text-slate-400">EIN:</span><span class="text-slate-200 ml-2">${entity.ein}</span></div>`;
+      }
+      if (entity.filed) {
+        content += `<div><span class="text-slate-400">Filed:</span><span class="text-slate-200 ml-2">${entity.filed}</span></div>`;
+      }
+      if (entity.status) {
+        const statusClass = entity.status === 'ACTIVE' ? 'bg-emerald-500/20 text-emerald-300' : 'bg-red-500/20 text-red-300';
+        content += `<div><span class="text-slate-400">Status:</span><span class="ml-2 px-2 py-0.5 rounded text-xs font-medium ${statusClass}">${entity.status}</span></div>`;
+      }
+      if (entity.address) {
+        content += `<div><span class="text-slate-400">Address:</span><span class="text-slate-200 ml-2 block">${entity.address}</span></div>`;
+      }
+      if (entity.owners) {
+        content += `<div><span class="text-slate-400">Authorized Persons:</span><ul class="text-slate-200 ml-4 mt-1 list-disc">`;
+        entity.owners.forEach(owner => {
+          content += `<li>${owner}</li>`;
+        });
+        content += `</ul></div>`;
+      }
+      if (entity.controls) {
+        content += `<div><span class="text-slate-400">Controls:</span><ul class="text-slate-200 ml-4 mt-1 list-disc">`;
+        entity.controls.forEach(ctrl => {
+          content += `<li>${ctrl}</li>`;
+        });
+        content += `</ul></div>`;
+      }
+      if (entity.notes) {
+        content += `<div class="pt-2 border-t border-slate-700"><span class="text-slate-400 italic">${entity.notes}</span></div>`;
+      }
+
+      detailContent.innerHTML = content;
+      detailPanel.classList.remove('hidden');
+    }
+
+    // Add click handlers to all entity boxes
+    document.querySelectorAll('.entity-box').forEach(box => {
+      box.addEventListener('click', () => {
+        showDetails(box.dataset.id);
+      });
+    });
+
+    // Close button handler
+    closeBtn.addEventListener('click', () => {
+      selectedEntity = null;
+      document.querySelectorAll('.entity-box').forEach(box => box.classList.remove('selected'));
+      detailPanel.classList.add('hidden');
+    });
+  </script>
+</body>
+</html>
